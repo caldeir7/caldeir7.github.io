@@ -23,4 +23,13 @@ PHP e MYSQL
  manutenção e o upgrade de computadores.
 
 
-### Introdução ao Office
+### Introdução ao Office: Word, Excel e PowerPoint 2015
+ Formatar textos e documentos profissionais no Word
+- Personalizar páginas e editar tabelas no Word
+- Ajustar a exibição e a impressão de documentos no Word
+- Criar planilhas e gráficos básicos, inserindo e editando dados no Excel
+- Personalizar planilhas, usar classificação e filtros simplificados no Excel
+- Realizar cálculos nas fórmulas e funções do Excel
+- Montar apresentações personalizadas usando o PowerPoint
+- Fazer roteiro e estrutura dos slides no PowerPoint
+- Realizar apresentações profissionais com o PowerPoint
