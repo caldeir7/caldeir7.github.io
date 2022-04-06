@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Layout</title>
+<style>
+/* Regras de uso Geral: O que codificamos aqui, é tudo que será usado no site não importando muito o tamanho da tela.
+Neste momento, não usamos media queries. */
+*, *::before, *::after { box-sizing: border-box; }
+
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+
+/* Importante para o uso do REM */
+html{
+    font-size: 15px;
+}
+
+
+
+#container{
+    box-shadow: black 0 0 5px;
+    padding: 5px;
+}
+
+header{
+    background-color: white;
+    text-align: center;
+    height: 110px;    
+}
+
+
+
+/* CSS Reset: remoção de valores padrão */
+
+body, h1, h2, p{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-size: 2rem;
+}
+
+h2{
+    font-size: 1.3rem;
+}
+
+p{
+    font-size: 1.1rem;
+}
+
+nav{
+    background-color: yellow;
+}
+
+article{
+    padding: 5px;
+}
+
+.col-um{
+    background-color: antiquewhite;
+}
+
+.col-dois{
+    background-color: aqua;
+}
+
+.col-tres{
+    background-color: cadetblue;
+}
+
+footer{
+    background-color: black;
+    height: 110px;
+    margin-top: 10px;
+}
+
+footer p{
+    font-size: 1.2rem;
+    color: white;
+    text-align: center;
+}
+
+/* Regras Desing Responsivo */
+
+/* 1° Media Query: Telas a partir de 700px de largura */
+
+@media screen and (min-width: 700px){
+    html{
+        font-size: 18px;
+    }
+    main{
+        display: flex;
+        flex-wrap: wrap; /* Permite quebra no fluxo */
+    }
+    .col-um, .col-dois{
+        width: 50%;
+    }
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    nav{
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+    }
+
+}
+
+@media screen and (min-width: 822px){
+    html{
+        font-size: 20px;
+    }
+
+    #container{
+        max-width: 1200px;
+        margin: auto;
+    }
+
+
+    .col-um, .col-dois, .col-tres{
+        width: 33.33%;
+    }
+
+}
+
+
+
+
+
+</style>
+</head>
+<body>
+    
+    <div id="container">
+        <!-- Cabeçalho -->
+        <header>
+            <h1>Site XYZ</h1>
+            <nav>
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </nav>
+        </header>
+        <!-- Conteúdo -->
+        <main>
+            <article class="col-um">
+                <h2>Um</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, assumenda alias? Inventore, beatae. Architecto placeat asperiores eos! Soluta minus vero id veritatis quos quisquam, a perspiciatis hic cumque provident nisi neque nostrum voluptate reprehenderit aperiam, labore, ad aliquam blanditiis. Quisquam voluptas corrupti praesentium repudiandae eligendi veniam facilis nobis neque aperiam!</p>
+            </article>
+            <article class="col-dois">
+                <h2>Dois</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus voluptas beatae iste quam? Architecto at eveniet dolorem enim laborum atque deserunt incidunt est provident quam. Fugiat corporis tenetur excepturi! Voluptas atque, quas quos iste error minima expedita accusamus placeat consequuntur voluptate facilis animi consectetur corrupti natus aliquid libero quia molestias.</p>
+            </article>
+            <article class="col-tres">
+                <h2>Três</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, modi quisquam nostrum laboriosam temporibus minima nihil aspernatur dolores quod ducimus earum distinctio accusamus quae hic obcaecati esse. Minus, quia delectus ullam est incidunt natus eligendi, saepe, ducimus amet quisquam mollitia. Quis voluptate iure illo illum. Quaerat sit neque expedita ut?</p>
+            </article>
+        </main>
+        <!-- Rodapé -->
+        <footer>
+            <p>Layout De Exemplo</p>
+        </footer>
+    </div>
+
+
+    
+</body>
+</html>

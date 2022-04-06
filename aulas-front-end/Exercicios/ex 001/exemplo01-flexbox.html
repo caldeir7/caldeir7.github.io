@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flexbox</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; }
+
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+
+
+#exemplo{ /* Div Pai: Flex-Container */
+    border: solid 2px red;
+    width: 70%;
+    height: 200px;
+    margin: auto;
+
+    /* Habilitando o FlexBox */
+    display: flex;
+
+
+    /* Quando Habilitado Permite trabalhar com Alinhamento do eixo X (Horizontal) */
+    justify-content: space-evenly;
+
+    /* Permite Alinhamento Vertical */
+    align-items: flex-start;
+
+    /* Necessario para nao ficar tudo grudado tipo a tag <br> porém no CSS  */
+    flex-wrap: wrap;
+}
+
+.caixas{
+    width: 100px;
+    height: 50px;
+    background-color: yellowgreen;
+    border: solid 1px black;
+}
+
+#um{
+    background-color: orange;
+    width: 150px;
+}
+
+#dois{
+    background-color: green;
+    width: 150px;
+}
+
+
+
+
+</style>
+</head>
+<body>
+    <h1>Alinhamento de elementos e conteúdo com Flexbox</h1>
+    <hr>
+    <p>Flexbox é um mecanismo CSS3 que permite aplicar alinhamento, espaçamento e distribuição de elementos no HTML.</p>
+
+    <h2>Exemplo</h2>
+
+    <div id="exemplo">
+        <div class="caixas" id="um">Um</div>
+
+        <div class="caixas" id="dois">Dois</div>
+
+        <div class="caixas">Três</div>
+
+
+        <div class="caixas">Quatro</div>
+
+        <div class="caixas">Cinco</div>
+
+        <div class="caixas">Seis</div>
+    </div>
+
+    
+
+</body>
+</html>
