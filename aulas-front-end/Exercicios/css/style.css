@@ -1,0 +1,12 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: radial-gradient(#F2F2F2,#3d3c3c);
+}
+
+/* Regas Containers */
+
+
+/* Fim das Regras Containers */
