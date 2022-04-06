@@ -3,18 +3,24 @@ Portfólio de projetos Front-End
 
 ## Formação
 
-### Introdução ao Pacote Office World, Excel e Powerpoint
-Gerenciamento de Tabelas
-
 ### Curso de Progamador Web.
 
 #### Front-End
 - HTML
 - CSS
-- JavaScript
+- JS
 
 #### Back-end
 PHP e MYSQL
 
-### Montador e Reparador de computadores
-Senac 
+### Montador e Reprador de Computadores
+- Montar 
+- Instalar 
+- Reparar  
+- Configurar 
+ dispositivos de hardware 
+ com sistemas operacionais e softwares, além de fazer a 
+ manutenção e o upgrade de computadores.
+
+
+### Introdução ao Office

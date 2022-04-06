@@ -1,0 +1,330 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 14px;
+}
+
+body{
+    background-color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    /* Etapa 1 Solução do problema do rodapé: colocar o body em modo flex e definir altura minima usando a viewport com referências*/
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Etapa 2: Fazer o conteudo (main) ocupar todo o espaço necessário para empurrar o rodapé para baixo */
+main{flex: 1;}
+
+img{
+    max-width: 100%;
+}
+
+/* CSS Reset: remoção de valores padrão */
+
+body, h1, h2, h3, p, figure{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-size: 1.5rem;
+    font-weight: normal;
+    font-family: 'Raleway', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1 a{
+    color: yellow;
+    background-color: black;
+    border-radius: 4px;
+    padding: 0.3rem 1rem;
+}
+
+header{
+    text-transform: uppercase;
+    background-color: #fff;
+    /* deixa cabeçalho preso  */
+    position: sticky; 
+    top: 0;
+    border-radius: 3px;
+}
+
+
+header .limitador{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+}
+
+
+
+/* Regra para qualquer elemento com a classe limitador */
+.limitador{
+    max-width: 1100px;
+    margin: auto;
+    width: 95%;
+}
+/* Regas para texto/link menu */
+nav h2{
+    text-align: right;
+
+}
+
+nav h2 a{
+    color: black;
+    font-size: 1.2rem;
+    padding: 1rem;
+    display: inline-block;
+}
+
+nav h2 a:hover,
+nav h2 a:focus, /* navegação pelo teclado Obrogatório Não Esquecer nunca */
+.links-menu a:hover,
+.links-menu a:focus {
+    background-color: rgba(220, 220, 220, 0.507);
+    border-radius: 4px;
+}
+
+.links-menu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+
+.links-menu a{
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #fff;
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Regra menu aberto Seletor específico só funciona com as duas classes juntas
+Permite funcionamento do js no menu*/
+.links-menu.aberto{
+    /* Usamos o flex para voltar a exibir o men (quando aberto) */
+    display: flex;
+    /* E fazemos com que os links aparaceçam verticalmente */
+    flex-direction: column;
+
+    /* Usamos position e coordenadas 
+    para garantir o posicionamento correto 
+    do menu quando aberto */
+    position: absolute;
+    right: 0;
+    left: 0;
+}
+
+
+/* Destaque */
+.destaque{
+    background-image: url(../imagens/fundo-destaque.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    height: 90vh;
+
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+   
+}
+/* Sem esta definição de tamanho o flex-wrap não funciona */
+.destaque h2, 
+.destaque p{
+    width: 100%;
+}
+
+.destaque h2{
+    /* Regra Fonte Responsiva: funão chamada clamp( minimo, ideal, máximo) */
+    font-size: clamp(1.8rem, 10vw, 7rem);
+    font-weight: bolder;
+
+    /* Etapa 2: chamar e configurar animação */
+    animation: aparecer 3s 1s;
+}
+
+.destaque p{
+    font-size: clamp(1.5rem, 3vw, 4rem);
+    font-weight: bolder;
+
+    /* animation-name: aparecer;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-fill-mode: backwards; */
+
+    /* abreviação animation */
+    animation: aparecer 4s  1.5s   backwards;
+}
+
+/* Etapa 1° Regra de animação */
+
+@keyframes aparecer{ /* feidin */
+    from {opacity: 0;} /* de */
+    two {opacity: 1;}  /* para */
+}
+
+.front-end,
+.historia,
+.localizacao{
+    text-align: center;
+}
+
+article h2{ padding: 1rem;}
+
+article p{padding: 0.5rem;}
+
+.historia{
+    background-image: url(../imagens/fundo-madeira.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.historia h2{
+    color: white;
+    text-shadow: black 1px 1px 5px;
+}
+
+.historia iframe{
+    width: 100%;
+    max-width: 700px;
+}
+
+footer{
+    background-color: black;
+    color: wheat;
+    height: 15vh;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+/* regras para o contéudo das páginas: Produtos, Serviços e Contato */
+
+.conteudo {
+    background-color: white;
+    padding: .7rem;
+    border-radius: 7px;
+}
+
+.conteudo h2{
+    text-align: center;
+}
+
+table, th, td{
+    border: solid 2px black;
+
+    /* Remove os espaços entre as bordas */
+    border-collapse: collapse;
+}
+
+table{
+    width: 80%;
+    margin: auto;
+    max-width: 600px;
+}
+
+caption{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding-bottom: 5px;
+}
+
+td {
+    /* background-color: white; */
+    font-size: 1.2rem;
+}
+
+/* Formatando os últimos td's */
+td:last-child { 
+    font-weight: bold; 
+    text-align: right;
+    padding-right: 5px;
+}
+
+/* Formatando os primeiros td's */
+td:first-child { text-transform: uppercase; }
+
+/* Formatando os "segundos" td's */
+td:nth-child(2) { text-align: center; }
+
+/* even: par  - odd: ímpar */
+tr:nth-child(odd) { background-color: #ccc; }
+
+/* pseudoclass começam com 2 pontos */
+
+form{
+    width: 95%;
+    margin: auto;
+    background-color: rgba(220, 220, 220, 0.226);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+button{
+   background-color: black;
+   color: white;
+   padding: 1rem;
+   border: none;
+   font-weight: bold;
+   margin-top: 1rem;
+
+}
+
+form div{
+    margin-top: 1rem;
+}
+
+/* Pseudo-classe :not() 
+Permite criar exceções para determinadas regras.
+Abaixo, estamos pegando todos os inputs exceto os do tipo radio e checkbox*/
+input:not([type=radio]):not([type=checkbox]), select, textarea{
+    border: none;
+    padding: 1%;
+    width: 100%;
+    height: 40px;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 255, 0.61) 0 0 2px;
+}
+
+textarea{
+    height: auto;
+}
+
+
+
+/* 1° Media Query: Telas a partir de 530px de largura */
+
+
+@media screen and (min-width: 530px) {
+    nav { width: 70%; }
+    nav h2 { display: none; }
+    .links-menu { display: flex; }
+    .links-menu li { width: 100%; }
+}
+
+@media screen and (min-width: 800px) {
+    html { font-size: 18px; }
+    header .limitador { height: 15vh; }
+    .destaque { height: 85vh; }
+}
