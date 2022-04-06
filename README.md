@@ -23,6 +23,8 @@ Portfólio de projetos Front-End
 ### Repor Brasil LTDA
 - Período: 03/03/2020 a 06/06/2020
 - Função: Repositor de Mercadorias
+- Responsável pela limpeza, organização e abastecimento das prateleiras, gôndolas e pistas de estabelecimentos comerciais
+
 
 ### ADPM - Ascossiação Desportiva da Policia Militar
 - Período: 09 Meses
