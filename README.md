@@ -15,16 +15,19 @@ Portfólio de projetos Front-End
 ## Experiencia Profissional
 
 ### Life Recursos Humanos LTDA
-- Período: 
-- Função:
+- Período: 11/01/2019 a 28/02/2019
+- Função: Promotor Merchandising
+- Entre as atividades do trabalho estão planejar, desenvolver e colocar em prática ações para aumentar as vendas e, consequentemente, o faturamento.
+
 
 ### Repor Brasil LTDA
-- Período:
-- Função:
+- Período: 03/03/2020 a 06/06/2020
+- Função: Repositor de Mercadorias
 
 ### ADPM - Ascossiação Desportiva da Policia Militar
 - Período: 09 Meses
 - Função: Tratador de Piscina
+- Realizar a limpeza e tratamento da água de piscinas com cloro e aspiração.
 
 
 ## Formação
