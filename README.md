@@ -2,12 +2,19 @@
 Portfólio de projetos Front-End
 
 ## Formação
-Curso de Progamador Web.
 
-### Front-End
+### Introdução ao Pacote Office World, Excel e Powerpoint
+Gerenciamento de Tabelas
+
+### Curso de Progamador Web.
+
+#### Front-End
 - HTML
 - CSS
-- JS
+- JavaScript
 
-### Back-end
+#### Back-end
 PHP e MYSQL
+
+### Montador e Reparador de computadores
+Senac 
