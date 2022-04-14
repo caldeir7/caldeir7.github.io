@@ -41,7 +41,7 @@ a{
 }
 
 h1 a{
-    color: yellow;
+    color: rgb(255, 255, 255);
     background-color: black;
     border-radius: 4px;
     padding: 0.3rem 1rem;
@@ -54,6 +54,7 @@ header{
     position: sticky; 
     top: 0;
     border-radius: 3px;
+    z-index: 1000;
 }
 
 
@@ -61,7 +62,7 @@ header .limitador{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 10vh;
+    height: 13vh;
 }
 
 
@@ -89,8 +90,9 @@ nav h2 a:hover,
 nav h2 a:focus, /* navegação pelo teclado Obrogatório Não Esquecer nunca */
 .links-menu a:hover,
 .links-menu a:focus {
-    background-color: rgba(220, 220, 220, 0.507);
+    background-color: rgb(220, 220, 220);
     border-radius: 4px;
+    color: blue;
 }
 
 .links-menu{
@@ -106,7 +108,7 @@ nav h2 a:focus, /* navegação pelo teclado Obrogatório Não Esquecer nunca */
     font-weight: bold;
     background-color: #fff;
     display: flex;
-    height: 50px;
+    height: 40px;
     align-items: center;
     justify-content: center;
 }
@@ -134,7 +136,7 @@ Permite funcionamento do js no menu*/
     background-size: cover;
     background-attachment: fixed;
     color: white;
-    height: 90vh;
+    height: 87vh;
 
 
     display: flex;
