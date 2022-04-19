@@ -56,3 +56,32 @@ https://github.com/vanilla-masker/vanilla-masker */
 
 VMasker(inputCep).maskPattern("99999-999");
 VMasker(inputTelefone).maskPattern("(99) 99999-9999");
+
+// Progamação do contados de caracteres do cmapo Mensagem
+const spanMaximo = formulario.querySelector("#maximo");
+const bCaracteres = formulario.querySelector("#caracteres");
+const textMensagem = formulario.querySelector("#mensagem");
+
+// Determinar a quantidade máxima de caracteres do campo mensagem
+let quantidade = 100;
+
+// Evento para detectar a digitaçao (entrada) no campo
+textMensagem.addEventListener("input", function(){
+    // console.log(textMensagem.value);
+    // Caputando o que for siigitado
+    let conteudo = textMensagem.value;
+
+    // Criando uma contagem regressiva
+    let contagem = quantidade - conteudo.length;
+    if (contagem == 0 ) {
+        bCaracteres.style.color = "Red"
+        textMensagem.style.boxShadow = "red 0px 0px  10px"
+    } else {
+        bCaracteres.style.color = "black"
+        textMensagem.style.boxShadow = "black 0 0 10px"
+    }
+    
+    bCaracteres.textContent = contagem;
+
+   
+});

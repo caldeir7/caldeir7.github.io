@@ -129,11 +129,11 @@
                 </div>
 
                 <div>
-                    <label for="mensagem">Mensagem</label>
+                    <label for="mensagem">Mensagem: 
+                        <span id="maximo"> (restam <b id="caracteres">100</b> caracteres)</span>
+                    </label> 
                     <br>
-                    <textarea name="mensagem" id="mensagem" cols="20" rows="5" placeholder="Digite sua mensagem">
-
-                    </textarea>
+                    <textarea maxlength="100" name="mensagem" id="mensagem" cols="20" rows="5" placeholder="Digite sua mensagem"></textarea>
                 </div>
 
                 <button type="submit">Enviar dados</button>
@@ -149,7 +149,7 @@
         <br>Senac Penha - 2022 </p>
     </footer>
 
-    <!-- Importação da lib ou Biblioteca -->
+    <!-- Importação da lib ou Bib -->
     <script src="js/vanilla-masker.min.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/scripts.js"></script>
