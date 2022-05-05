@@ -38,7 +38,7 @@ Portfólio de projetos Front-End
 
 ### Cursos Extra-curriculares
 
-#### Curso de Progamador Web.
+#### Progamador Web. - Senac Penha
 
 ##### Front-End
 - HTML
@@ -48,7 +48,7 @@ Portfólio de projetos Front-End
 ##### Back-end
 PHP e MYSQL
 
-#### Montador e Reprador de Computadores
+#### Montador e Reprador de Computadores - Senac São Miguel Paulista.
 ##### Conclusão: 01/2019.
 - Montar 
 - Instalar 
@@ -60,7 +60,7 @@ PHP e MYSQL
 
 
 
-### Introdução ao Office: Word, Excel e PowerPoint 2015
+### Introdução ao Office: Word, Excel e PowerPoint 2015 - Senac Tatuapé.
 #### Conclusão: 2015
  Formatar textos e documentos profissionais no Word
 - Personalizar páginas e editar tabelas no Word
